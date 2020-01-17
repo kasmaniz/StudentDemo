@@ -16,12 +16,13 @@ public class StudentDemo {
 
     private String name;
     private int sid;
-
+private int h;
     //constructor
-    public StudentDemo(String givenName,int n)
+    public StudentDemo(String givenName,int n,int a)
     {
         name=givenName;
         sid = n;
+        h=a;
     }
     /**
      * @return the name
@@ -37,6 +38,20 @@ public class StudentDemo {
      */
     public void setName(String givenName) {
         name = givenName;
+    }
+
+    /**
+     * @return the h
+     */
+    public int getH() {
+        return h;
+    }
+
+    /**
+     * @param h the h to set
+     */
+    public void setH(int h) {
+        this.h = h;
     }
     
     

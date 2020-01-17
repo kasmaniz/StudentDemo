@@ -19,15 +19,15 @@ public class StudentTester {
         //array of StudentDemo objects
         StudentDemo[] StudentLst=new StudentDemo[3];
         
-        StudentDemo s1=new StudentDemo("Sivagama",123);
+        StudentDemo s1=new StudentDemo("Sivagama",123,5);
         StudentLst[0]=s1;
         
-        StudentLst[1]=new StudentDemo("amrit kaur",345);
-        StudentLst[2]=new StudentDemo("Denbin",567);
+        StudentLst[1]=new StudentDemo("amrit kaur",345,6);
+        StudentLst[2]=new StudentDemo("Denbin",567,7);
         
         for(int i=0;i<StudentLst.length;i++)
         {
-            System.out.println(StudentLst[i].getName() + StudentLst[i].getsid());
+            System.out.println(StudentLst[i].getName() + StudentLst[i].getsid()+StudentLst[i].getH());
         }
         
         }
